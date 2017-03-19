@@ -86,13 +86,13 @@ class TabelaLivros extends Component {
   render() {
     var livros = this.props.lista.map(function(livro){
       return(
-          <tr key={livro.titulo}>
-            <td>{livro.titulo}</td>
-            <td>{livro.autor.nome}</td>
-            <td>{livro.preco}</td>
-          </tr>
-        );
-      });
+        <tr key={livro.titulo}>
+          <td>{livro.titulo}</td>
+          <td>{livro.autor.nome}</td>
+          <td>{livro.preco}</td>
+        </tr>
+      );
+    });
     return(
       <table className="pure-table">
         <thead>
